@@ -12,6 +12,7 @@ public:
 	void doubleSize();
 	void colorFilter(int redTarget, int greenTarget, int blueTarget, int tolerance, int newRed, int newGreen, int newBlue);
 	void save(string outFileName);
+	void blueSquare(); 
 
 private:
 	void swapPixels(int x1, int y1, int x2, int y2);

@@ -62,6 +62,8 @@ class Picture
       @return the red value of the pixel (between 0 and 255),
       or 0 if the given point is not in the picture.
    */
+   //////////// // j == y /////////////// 
+   /////////////// i == x ///////////////
    int red(int x, int y) const;
 
    /**

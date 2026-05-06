@@ -1,0 +1,3 @@
+/Users/jason/ImageEditor/build/CMakeFiles/ImageEditor.dir
+/Users/jason/ImageEditor/build/CMakeFiles/edit_cache.dir
+/Users/jason/ImageEditor/build/CMakeFiles/rebuild_cache.dir
