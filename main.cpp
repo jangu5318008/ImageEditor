@@ -6,6 +6,10 @@ using namespace std;
 
 int main() {
 
+
+    
+
+
     Picture pic("pikachu.png");
     cout << "Width: " << pic.width() << endl;
     cout << "Height: " << pic.height() << endl;
@@ -30,6 +34,3 @@ int main() {
 
     return 0;
 }
-/*add tolerance to get more pixels close to desired RGB value.
-aka more of pikachu's red cheek is colored instead of weird
-tweaker patches*/
