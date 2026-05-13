@@ -7,24 +7,45 @@ ImageEditor::ImageEditor (string inFileName) {
     pic = Picture(inFileName);
 }
 	void ImageEditor::flipVertical() {
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < width() / 2; j++) {
-                swapPixels(j, i, width() - j - 1, i);
-            }
-        }
+	       ///////outer loop halved/////
+	        for (int y = 0; y < pic.height() / 2; y++) {
+	            for (int x = 0; x < pic.width(); x++) {
+	               //current column, current row
+	               //same column, opposite row
+	                swapPixels(x, y, x, pic.height() - y - 1);
+	            }
+	        }
 
-    }
+	    }
 	void ImageEditor::flipHorizontal() {
-        for (int i = 0; i < pic.height(); i++) {
-            for (int j = 0; j < pic.width() / 2; j++) {
-                swapPixels(j, i, pic.width() - j - 1, i);
-            }
+	    ////inner loop halved/////
+	        for (int y = 0; y < pic.height(); y++) {
+	            for (int x = 0; x < pic.width() / 2; x++) {
+	                swapPixels(x, y, pic.width() - x - 1, y);
+	            }
+	        }
     }
-	void ImageEditor::doubleSize() {
-        Picture picOut(width() * 2, height() * 2);
+    void ImageEditor::doubleSize() {
+        
         int xOut = 0;
         int yOut = 0;
+        int r = pic.red(x, y);
+        int g = pic.green(x, y);
+        int b = pic.blue(x, y);
 
+        Picture picOut(pic.width() * 2, pic.height() * 2);
+
+        for (int y = 0; y < pic.height(); y++) {
+            for (int x = 0; x < pic.width(); x++) {
+                //5 items
+                picOut.set(xOut, yOut, r, g, b);
+                picOut.set(xOut + 1, yOut, r, g, b);
+                picOut.set(xOut, yOut + 1, r, g, b);
+                picOut.set(xOut + 1, yOut + 1, r, g, b);
+                xOut += 2;
+            }
+            yOut += 2;
+        }
 
     }
 	void ImageEditor::colorFilter(int redTarget, int greenTarget, int blueTarget, int tolerance, int newRed, int newGreen, int newBlue) {
@@ -50,4 +71,3 @@ ImageEditor::ImageEditor (string inFileName) {
         }
     }
 */
-
