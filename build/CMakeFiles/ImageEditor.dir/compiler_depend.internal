@@ -1549,6 +1549,7 @@ CMakeFiles/ImageEditor.dir/main.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h
+ /Users/jason/ImageEditor/ImageEditor.h
  /Users/jason/ImageEditor/lodepng.h
  /Users/jason/ImageEditor/picture.h
 

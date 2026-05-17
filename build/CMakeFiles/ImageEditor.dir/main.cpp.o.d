@@ -790,4 +790,5 @@ CMakeFiles/ImageEditor.dir/main.cpp.o: /Users/jason/ImageEditor/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/jason/ImageEditor/picture.h /Users/jason/ImageEditor/lodepng.h
+  /Users/jason/ImageEditor/picture.h /Users/jason/ImageEditor/lodepng.h \
+  /Users/jason/ImageEditor/ImageEditor.h

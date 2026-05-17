@@ -1547,6 +1547,7 @@ CMakeFiles/ImageEditor.dir/main.cpp.o: /Users/jason/ImageEditor/main.cpp \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdint.h \
+  /Users/jason/ImageEditor/ImageEditor.h \
   /Users/jason/ImageEditor/lodepng.h \
   /Users/jason/ImageEditor/picture.h
 
@@ -2739,6 +2740,8 @@ CMakeFiles/ImageEditor.dir/picture.cpp.o: /Users/jason/ImageEditor/picture.cpp \
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stdarg___gnuc_va_list.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/datasizeof.h:
+
+/Users/jason/ImageEditor/ImageEditor.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/copy_cvref.h:
 

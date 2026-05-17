@@ -47,11 +47,23 @@ ImageEditor::ImageEditor (string inFileName) {
             yOut += 2;
         }
 
+
     }
 	void ImageEditor::colorFilter(int redTarget, int greenTarget, int blueTarget, int tolerance, int newRed, int newGreen, int newBlue) {
+        for (int y = 0; y < pic.height(); y++) {
+
+            for (int x = 0; x < pic.width(); x++) {
+
+
+            }
+        }
+
+
+
 
     }
 	void ImageEditor::save(string outFileName) {
+        pic.save(outFileName);
 
     }
 
