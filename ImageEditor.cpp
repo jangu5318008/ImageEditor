@@ -29,21 +29,24 @@ ImageEditor::ImageEditor (string inFileName) {
         
         int xOut = 0;
         int yOut = 0;
-        int r = pic.red(x, y);
-        int g = pic.green(x, y);
-        int b = pic.blue(x, y);
+        
 
         Picture picOut(pic.width() * 2, pic.height() * 2);
 
         for (int y = 0; y < pic.height(); y++) {
             for (int x = 0; x < pic.width(); x++) {
                 //5 items
+                int r = pic.red(x, y);
+                int g = pic.green(x, y);
+                int b = pic.blue(x, y);
+
                 picOut.set(xOut, yOut, r, g, b);
                 picOut.set(xOut + 1, yOut, r, g, b);
                 picOut.set(xOut, yOut + 1, r, g, b);
                 picOut.set(xOut + 1, yOut + 1, r, g, b);
                 xOut += 2;
             }
+            xOut = 0;
             yOut += 2;
         }
 
