@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o"
+  "CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o.d"
   "CMakeFiles/ImageEditor.dir/lodepng.cpp.o"
   "CMakeFiles/ImageEditor.dir/lodepng.cpp.o.d"
   "CMakeFiles/ImageEditor.dir/main.cpp.o"

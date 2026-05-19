@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/jason/ImageEditor/ImageEditor.cpp" "CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o" "gcc" "CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o.d"
   "/Users/jason/ImageEditor/lodepng.cpp" "CMakeFiles/ImageEditor.dir/lodepng.cpp.o" "gcc" "CMakeFiles/ImageEditor.dir/lodepng.cpp.o.d"
   "/Users/jason/ImageEditor/main.cpp" "CMakeFiles/ImageEditor.dir/main.cpp.o" "gcc" "CMakeFiles/ImageEditor.dir/main.cpp.o.d"
   "/Users/jason/ImageEditor/picture.cpp" "CMakeFiles/ImageEditor.dir/picture.cpp.o" "gcc" "CMakeFiles/ImageEditor.dir/picture.cpp.o.d"

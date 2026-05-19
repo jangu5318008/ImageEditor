@@ -6,7 +6,8 @@ using namespace std;
 
 int main() {
    
-   ////////TOLERANCE SLIDER//////////////////////////
+   ////////TOLERANCE SLIDER/////////////////////////
+   ///////TRY TOLERANCE 30  //////////////////
     int tolerance; 
     cout << "Enter desired tolerance: "; 
     cin >> tolerance;
@@ -16,7 +17,9 @@ int main() {
     editor.flipHorizontal();
     editor.flipVertical(); 
     editor.doubleSize();
-    editor.colorFilter(249, 82, 45, tolerance, 6, 173, 210); 
+    
+    //////COLOR SWAP LOGIC, oldR, oldG, oldB, tolerance, newR, newG, newB;////////////
+    editor.colorFilter(255, 218, 59, tolerance, 255, 10, 255); 
 
     editor.save("Pikachu2.png"); 
 

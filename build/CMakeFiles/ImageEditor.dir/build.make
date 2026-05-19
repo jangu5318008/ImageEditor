@@ -86,10 +86,24 @@ CMakeFiles/ImageEditor.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ImageEditor.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/ImageEditor/main.cpp -o CMakeFiles/ImageEditor.dir/main.cpp.s
 
+CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o: CMakeFiles/ImageEditor.dir/flags.make
+CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o: /Users/jason/ImageEditor/ImageEditor.cpp
+CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o: CMakeFiles/ImageEditor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jason/ImageEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o -MF CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o.d -o CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o -c /Users/jason/ImageEditor/ImageEditor.cpp
+
+CMakeFiles/ImageEditor.dir/ImageEditor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ImageEditor.dir/ImageEditor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jason/ImageEditor/ImageEditor.cpp > CMakeFiles/ImageEditor.dir/ImageEditor.cpp.i
+
+CMakeFiles/ImageEditor.dir/ImageEditor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ImageEditor.dir/ImageEditor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jason/ImageEditor/ImageEditor.cpp -o CMakeFiles/ImageEditor.dir/ImageEditor.cpp.s
+
 CMakeFiles/ImageEditor.dir/picture.cpp.o: CMakeFiles/ImageEditor.dir/flags.make
 CMakeFiles/ImageEditor.dir/picture.cpp.o: /Users/jason/ImageEditor/picture.cpp
 CMakeFiles/ImageEditor.dir/picture.cpp.o: CMakeFiles/ImageEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jason/ImageEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ImageEditor.dir/picture.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jason/ImageEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ImageEditor.dir/picture.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImageEditor.dir/picture.cpp.o -MF CMakeFiles/ImageEditor.dir/picture.cpp.o.d -o CMakeFiles/ImageEditor.dir/picture.cpp.o -c /Users/jason/ImageEditor/picture.cpp
 
 CMakeFiles/ImageEditor.dir/picture.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/ImageEditor.dir/picture.cpp.s: cmake_force
 CMakeFiles/ImageEditor.dir/lodepng.cpp.o: CMakeFiles/ImageEditor.dir/flags.make
 CMakeFiles/ImageEditor.dir/lodepng.cpp.o: /Users/jason/ImageEditor/lodepng.cpp
 CMakeFiles/ImageEditor.dir/lodepng.cpp.o: CMakeFiles/ImageEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jason/ImageEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ImageEditor.dir/lodepng.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jason/ImageEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ImageEditor.dir/lodepng.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ImageEditor.dir/lodepng.cpp.o -MF CMakeFiles/ImageEditor.dir/lodepng.cpp.o.d -o CMakeFiles/ImageEditor.dir/lodepng.cpp.o -c /Users/jason/ImageEditor/lodepng.cpp
 
 CMakeFiles/ImageEditor.dir/lodepng.cpp.i: cmake_force
@@ -117,6 +131,7 @@ CMakeFiles/ImageEditor.dir/lodepng.cpp.s: cmake_force
 # Object files for target ImageEditor
 ImageEditor_OBJECTS = \
 "CMakeFiles/ImageEditor.dir/main.cpp.o" \
+"CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o" \
 "CMakeFiles/ImageEditor.dir/picture.cpp.o" \
 "CMakeFiles/ImageEditor.dir/lodepng.cpp.o"
 
@@ -124,11 +139,12 @@ ImageEditor_OBJECTS = \
 ImageEditor_EXTERNAL_OBJECTS =
 
 ImageEditor: CMakeFiles/ImageEditor.dir/main.cpp.o
+ImageEditor: CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o
 ImageEditor: CMakeFiles/ImageEditor.dir/picture.cpp.o
 ImageEditor: CMakeFiles/ImageEditor.dir/lodepng.cpp.o
 ImageEditor: CMakeFiles/ImageEditor.dir/build.make
 ImageEditor: CMakeFiles/ImageEditor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jason/ImageEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ImageEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jason/ImageEditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ImageEditor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ImageEditor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

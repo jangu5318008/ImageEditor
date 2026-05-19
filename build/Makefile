@@ -129,6 +129,30 @@ ImageEditor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageEditor.dir/build.make CMakeFiles/ImageEditor.dir/build
 .PHONY : ImageEditor/fast
 
+ImageEditor.o: ImageEditor.cpp.o
+.PHONY : ImageEditor.o
+
+# target to build an object file
+ImageEditor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageEditor.dir/build.make CMakeFiles/ImageEditor.dir/ImageEditor.cpp.o
+.PHONY : ImageEditor.cpp.o
+
+ImageEditor.i: ImageEditor.cpp.i
+.PHONY : ImageEditor.i
+
+# target to preprocess a source file
+ImageEditor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageEditor.dir/build.make CMakeFiles/ImageEditor.dir/ImageEditor.cpp.i
+.PHONY : ImageEditor.cpp.i
+
+ImageEditor.s: ImageEditor.cpp.s
+.PHONY : ImageEditor.s
+
+# target to generate assembly for a file
+ImageEditor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ImageEditor.dir/build.make CMakeFiles/ImageEditor.dir/ImageEditor.cpp.s
+.PHONY : ImageEditor.cpp.s
+
 lodepng.o: lodepng.cpp.o
 .PHONY : lodepng.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ImageEditor"
+	@echo "... ImageEditor.o"
+	@echo "... ImageEditor.i"
+	@echo "... ImageEditor.s"
 	@echo "... lodepng.o"
 	@echo "... lodepng.i"
 	@echo "... lodepng.s"
