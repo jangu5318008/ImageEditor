@@ -49,7 +49,7 @@ ImageEditor::ImageEditor (string inFileName) {
             xOut = 0;
             yOut += 2;
         }
-
+        pic = picOut;
 
     }
 	void ImageEditor::colorFilter(int redTarget, int greenTarget, int blueTarget, int tolerance, int newRed, int newGreen, int newBlue) {
