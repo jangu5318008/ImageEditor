@@ -5,15 +5,16 @@
 using namespace std;
 
 int main() {
-
-
-    
-
-
     Picture pic("pikachu.png");
+  /*
+  
+   ///////DEBUG////// 
     cout << "Width: " << pic.width() << endl;
     cout << "Height: " << pic.height() << endl;
-/*  cout << "Red value at 142, 135: " << pic.red(142, 135) << endl;
+  ///////DEBUG///////
+
+  */
+
     for (int y = 0; y < pic.height(); y++) {
         for (int x = 0; x < pic.width(); x++) {
             //249, 82, 45
@@ -22,12 +23,14 @@ int main() {
             }
         }
     }
+
     for (int y = pic.height () / 2; y < pic.height(); y++) {
 
         for (int x = pic.width() / 2 - 25; x < pic.width() / 2 + 25; x++) {
             pic.set(x, y, 0, 0, 255);
         }
-    }*/
+    }
+
 
     pic.save("Pikachu2.png"); 
 

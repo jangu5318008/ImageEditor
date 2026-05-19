@@ -50,10 +50,16 @@ ImageEditor::ImageEditor (string inFileName) {
 
     }
 	void ImageEditor::colorFilter(int redTarget, int greenTarget, int blueTarget, int tolerance, int newRed, int newGreen, int newBlue) {
+        
+        
+        
         for (int y = 0; y < pic.height(); y++) {
-
             for (int x = 0; x < pic.width(); x++) {
-
+                if (abs(pic.red(x, y) - redTarget) <= tolerance && 
+                abs(pic.green(x, y) - greenTarget) <= tolerance && 
+                abs(pic.blue(x, y) - blueTarget) <= tolerance) {
+                    pic.set(x, y, newRed, newGreen, newBlue);
+                }
 
             }
         }
