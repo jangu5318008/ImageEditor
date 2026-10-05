@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/jason/w1893652/CISP400/ImageEditor",
+      "program": "/Users/jason/w1893652/CISP400/ImageEditor/build/Debug/outDebug"
+    }
+  ]
+}
