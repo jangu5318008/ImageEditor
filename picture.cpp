@@ -3,6 +3,19 @@
 #include <stdexcept>
 #include "picture.h"
 
+/*
+   int width() const { return _width; }
+
+   
+      Returns the height of this picture.
+      @return the height
+   
+   int height() const { return _height; }
+*/
+
+
+
+
 Picture::Picture()
 {
    _width = 0;
