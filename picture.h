@@ -41,13 +41,17 @@ class Picture
       Returns the width of this picture.
       @return the width
    */   
-   int width() const { return _width; }
+   int width() const { 
+      return _width;
+   }
 
    /**
       Returns the height of this picture.
       @return the height
    */
-   int height() const { return _height; }
+   int height() const { 
+      return _height; 
+   }
 
    /**
       Saves this picture to the given file.

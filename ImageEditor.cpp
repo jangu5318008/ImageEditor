@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdexcept>
 #include "ImageEditor.h"
 using namespace std;
 
@@ -107,18 +108,84 @@ struct Color
 
 
 	bool ImageEditor::operator==(const ImageEditor& ie) const {
-        
+        /////////PRACTICING TERNARY OPERATORS HERE//////////
+        /////////shoutout prof tak////////////////
+        bool r, g, b; 
+        if (pic.height() != ie.pic.height() || pic.width() != ie.pic.width()) {
+            return false; 
+        }
+        else {
+            //rgb comparison
+            for (int x = 0; x < pic.width(); x++) {
+                for (int y = 0; y < pic.height(); y++) {
+                    r = (pic.red(x, y) == ie.pic.red(x, y) ? true : false);
+                        if (r == false) {
+                            return false;
 
+                        }
+                    g = (pic.green(x, y) == ie.pic.green(x, y) ? true : false);
+                        if (g == false) {
+                            return false;
+
+                        }
+                    b = (pic.blue(x, y) == ie.pic.blue(x, y) ? true : false);
+                        if (b == false) {
+                             return false;
+                        }          
+                }
+            } 
+            return true;
+        }
+//return (r == false || g == false || b == false ? false : true);
     }  //compare to another image
 
 
 	bool ImageEditor::operator!=(const ImageEditor& ie) const {
-
+        return !(*this == ie);
 
     }  //compare to another image
 
 
 	ImageEditor& ImageEditor::operator*=(unsigned int n) {
+        //int x = 0, y = 0, xOut = 0, yOut = 0; 
+    
+
+        if (n < 1 || n > 10) {
+            throw runtime_error("Please Try Again. N cannot be smaller than 1 nor larger than 10 :3");
+        }
+        Picture picOut(pic.width() * n, pic.height() * n); 
+   
+        for (int x = 0; x < pic.width(); x++) {
+            for (int y = 0; y < pic.height(); y++) {
+                for (int xOut = 0; xOut < FIXME; xOut += n) {
+                    for (int yOut = 0; yOut < FIXME ; yOut += n) {
 
 
+
+
+                    }
+
+
+
+
+
+
+                }
+
+
+
+
+
+            }
+
+
+
+
+
+        }
+        
+
+
+
+   
     } //expand by factor of n by n
