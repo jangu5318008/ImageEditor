@@ -3,13 +3,6 @@
 #include "ImageEditor.h"
 using namespace std;
 
-struct Color
-{
-	int r, g, b;
-};
-
-
-
 	ImageEditor::ImageEditor(string inFileName) : pic(inFileName) {
       //  pic(inFileName);
        // pic(inFileName) = placeHolder;
@@ -160,7 +153,7 @@ struct Color
             for (int y = 0; y < pic.height(); y++) {
                 for (int i = 0; i < n; i++) {
                     for (int j = 0; j < n; j++) {
-                        picOut[xOut + i][yOut + j] = pic[x][y];
+                        picOut.set(xOut + i, yOut + j, pic.red(x, y), pic.green(x, y), pic.blue(x, y));
                     }
                 }
                 yOut += n;
