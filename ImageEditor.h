@@ -1,6 +1,7 @@
 #pragma once
 #include "picture.h"
 #include <iostream>
+#include <stdexcept>
 using namespace std;
 
 struct Color

@@ -17,7 +17,7 @@ using namespace std;
 /////////For a given pixel {r,g,b}, its inverted pixel is {255 - r, 255 - g, 255 - b}//////
         int red, blue, green;
 
-        //// X == I == WIDTH///////// J == I == HEIGHT/////////
+        //// X == J == WIDTH///////// Y == I == HEIGHT/////////
         for (int x = 0; x < pic.width(); x++) {
             for (int y = 0; y < pic.height(); y++) {
                 red = 255 - pic.red(x, y);
