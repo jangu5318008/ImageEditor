@@ -147,8 +147,8 @@ struct Color
 
 
 	ImageEditor& ImageEditor::operator*=(unsigned int n) {
-        //int x = 0, y = 0, xOut = 0, yOut = 0; 
-    
+        int xOut = 0, yOut = 0; 
+
 
         if (n < 1 || n > 10) {
             throw runtime_error("Please Try Again. N cannot be smaller than 1 nor larger than 10 :3");
@@ -156,36 +156,17 @@ struct Color
         Picture picOut(pic.width() * n, pic.height() * n); 
    
         for (int x = 0; x < pic.width(); x++) {
+            yOut = 0;
             for (int y = 0; y < pic.height(); y++) {
-                for (int xOut = 0; xOut < FIXME; xOut += n) {
-                    for (int yOut = 0; yOut < FIXME ; yOut += n) {
-
-
-
-
+                for (int i = 0; i < n; i++) {
+                    for (int j = 0; j < n; j++) {
+                        picOut[xOut + i][yOut + j] = pic[x][y];
                     }
-
-
-
-
-
-
                 }
-
-
-
-
-
+                yOut += n;
             }
-
-
-
-
-
+            xOut += n;
         }
-        
-
-
-
-   
+        pic = picOut; 
+        return *this;   
     } //expand by factor of n by n
